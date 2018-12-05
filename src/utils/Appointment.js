@@ -2,6 +2,17 @@ const cors = "https://cors-anywhere.herokuapp.com/";
 const baseUrl = "http://si-appointment.herokuapp.com/api";
 
 export const Appointment = {
+	getAllStaffFarmasi() {
+		return fetch(`${cors}${baseUrl}/1/getAllStaffFarmasi`, {
+			method: 'GET',
+		})
+		.then(response => {
+			return response.json()
+		})
+		.then(jsonResponse => {
+			return jsonResponse
+		})
+	},
 	getAllPasien() {
 		return fetch(`${cors}${baseUrl}/1/getAllPasien`, {
 			method: 'GET',
