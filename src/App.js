@@ -6,6 +6,7 @@ import { Home } from './screens/Home';
 import { NotFound } from './screens/NotFound';
 import { UpdatePasien } from './screens/UpdatePasien';
 import { DaftarStafFarmasi } from './screens/DaftarStafFarmasi';
+import { addLabResult } from "./screens/addLabResult";
 
 export class App extends React.Component {
 	render() {
@@ -37,6 +38,7 @@ export class App extends React.Component {
 							<Route path="/all-pasien" exact component={DaftarPasien} />
 							<Route path="/all-StafFarmasi" exact component={DaftarStafFarmasi} />
 							<Route path="/update-pasien/:id" exact component={UpdatePasien} />
+							<Route path="/add-lab-result/:id" exact component={addLabResult} />
 							<Route path="/not-found" exact component={NotFound} />
 							<Route component={NotFound} />
 						</Switch>

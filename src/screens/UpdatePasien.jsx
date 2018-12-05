@@ -4,10 +4,6 @@ import { FormUpdatePasien } from '../containers/FormUpdatePasien';
 import { Appointment } from '../utils/Appointment';
 
 export class UpdatePasien extends React.Component {
-	/**
-	 * TODO: Akses method getDetailPasien(idPasien) pada Appointment dan lakukan update state.
-	 * TODO: Lakukan pemanggilan pada constructor() atau pada lifecycle componentDidMount()
-	 */
 
 	constructor(props) {
 		super(props)
